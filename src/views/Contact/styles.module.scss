@@ -1,0 +1,73 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+
+  h1 {
+    font-size: 0.8em;
+  }
+}
+
+@keyframes linkedin {
+  0% {
+    transform: rotate(0deg) translateY(0);
+  }
+  5% {
+    transform: rotate(-2deg) translateY(-15px);
+  }
+  10% {
+    transform: rotate(0deg) translateY(0px);
+  }
+  15% {
+    transform: rotate(4deg) translateY(-25px);
+  }
+  23% {
+    transform: rotate(0deg) translateY(0px);
+  }
+  30% {
+    transform: rotate(0deg) translateY(0px);
+  }
+  40% {
+    transform: translate(0px, -30px) rotate(360deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateY(0px);
+  }
+}
+
+.container {
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  padding: 0.2em;
+  top: 0;
+  margin-top: 0;
+
+  &:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 50px rgba(0, 0, 0, 1);
+  }
+  .icon {
+    transform-origin: center;
+    animation: linkedin 5s infinite;
+    text-decoration: none;
+    font-style: inherit;
+    color: #eeeeee;
+    &:visited {
+      color: #eeeeee;
+    }
+  }
+  .title {
+    display: inline-block;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #eeeeee;
+    &:visited {
+      color: #eeeeee;
+    }
+  }
+}
