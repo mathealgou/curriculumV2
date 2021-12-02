@@ -7,6 +7,19 @@
 
   h1 {
     font-size: 0.8em;
+    animation: contactH1 0.5s ease-in-out;
+  }
+}
+
+@keyframes contactH1 {
+  0% {
+    transform: translateY(-100vh);
+  }
+  80% {
+    transform: translateY(0.5em);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
@@ -40,12 +53,27 @@
   }
 }
 
+@keyframes container {
+  0% {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(-100px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .container {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  animation: container 1s ease-out;
   overflow: hidden;
-  padding: 0.2em;
-  top: 0;
-  margin-top: 0;
+  //   padding: 0.2em;
+  //   top: 0;
 
   &:hover {
     transform: scale(1.1);
