@@ -12,7 +12,6 @@ export function Projects() {
   }, []);
   return (
     <div className={styles.container}>
-      a
       {projects ? (
         projects.map((project, index) => (
           <ProjectCard project={project} key={index} />
