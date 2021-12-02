@@ -11,14 +11,17 @@ export function Projects() {
     await setProjects(parsedData);
   }, []);
   return (
-    <div className={styles.container}>
-      {projects ? (
-        projects.map((project, index) => (
-          <ProjectCard project={project} key={index} />
-        ))
-      ) : (
-        <div>Loading...</div>
-      )}
+    <div>
+      <h3 className={styles.title}>Projects</h3>
+      <div className={styles.container}>
+        {projects ? (
+          projects.map((project, index) => (
+            <ProjectCard project={project} key={index} />
+          ))
+        ) : (
+          <div>Loading...</div>
+        )}
+      </div>
     </div>
   );
 }
