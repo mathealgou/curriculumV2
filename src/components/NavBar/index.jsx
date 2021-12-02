@@ -11,7 +11,6 @@ export function NavBar(props) {
   const location = useLocation();
 
   useEffect(() => {
-    console.log(location.pathname);
     setIsOpen(false);
   }, [location]);
 
