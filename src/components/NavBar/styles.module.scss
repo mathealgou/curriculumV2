@@ -47,6 +47,7 @@
     font-size: 0.6em;
   }
   font-size: 0.6em;
+  margin-left: 5%;
   &:hover {
     animation: titleHover 0.5s ease-in-out;
     cursor: default;
@@ -63,7 +64,7 @@
     cursor: pointer;
     transform: scale(1.1) translateY(-5px);
   }
-  margin-right: 2em;
+  margin-right: 5%;
 }
 .icon {
   transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
