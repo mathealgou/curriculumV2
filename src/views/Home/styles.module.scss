@@ -1,5 +1,72 @@
 .home {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.5em;
+}
+
+@keyframes title {
+  from {
+    transform: translateY(200%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes blockLineStrong {
+  from {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes blockLineSpan {
+  from {
+    transform: translateY(200%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.block {
+  width: 80%;
+  margin-top: 2em;
+  .titleContainer {
+    overflow: hidden;
+    .title {
+      margin: 0;
+      animation: title 3s ease-in-out forwards;
+      text-align: center;
+    }
+  }
+  .blockLine {
+    overflow: hidden;
+    margin-top: 1.8em;
+    .strong {
+      animation: blockLineStrong 3s ease-in-out forwards;
+      margin: 0;
+      padding: 0;
+    }
+    .span {
+      margin: 0;
+      top: 0;
+      animation: blockLineSpan 3s ease-in-out forwards;
+      font-size: 0.6em;
+    }
+  }
+}
+#experience {
+  animation-delay: 0.1s;
+  transform: translateY(200%);
 }

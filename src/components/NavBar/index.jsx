@@ -17,7 +17,7 @@ export function NavBar(props) {
   return (
     <div className={styles.NavBar}>
       <div className={styles.container}>
-        <h1 className={styles.title}>Page title</h1>
+        <h1 className={styles.title}>Matheus Goulart</h1>
         <button className={styles.button} onClick={() => setIsOpen(!isOpen)}>
           <FontAwesomeIcon
             icon={faBars}
