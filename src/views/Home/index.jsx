@@ -45,6 +45,18 @@ export function Home() {
           </div>
         </div>
       </div>
+      <div className={styles.block}>
+        <div className={styles.titleContainer}>
+          <h1 className={styles.title} id={styles.experience}>
+            Education
+          </h1>
+        </div>
+        <div className={styles.blockLine}>
+          <div className={styles.strong}>Systems Development at SENAI</div>
+          <br />
+          <div className={styles.span}>Technical Course.</div>
+        </div>
+      </div>
     </div>
   );
 }

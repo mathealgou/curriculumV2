@@ -94,9 +94,15 @@
     display: inline-block;
     font-size: 0.8em;
     text-decoration: none;
+    text-align: center;
     color: #eeeeee;
     &:visited {
       color: #eeeeee;
     }
+  }
+  .phoneNumber {
+    text-decoration: none;
+    color: #eeeeee;
+    font-size: 0.4em;
   }
 }
