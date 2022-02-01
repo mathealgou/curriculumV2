@@ -9,7 +9,7 @@ export function Blog() {
 
   console.log("location: ", location);
 
-  const postsUrl = "http://localhost:8000/";
+  const postsUrl = "http://portifolio-blog.herokuapp.com/";
 
   useEffect(async () => {
     let postList = await fetch(postsUrl);
