@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route, Link, useLocation } from "react-router-dom";
 import { Post } from "../../components/Post";
+import styles from "./styles.module.scss";
 
 export function Blog() {
   const [posts, setPosts] = useState([]);
@@ -21,12 +22,14 @@ export function Blog() {
   }, [posts]);
 
   return (
-    <div>
+    <div className={styles.blog}>
       {posts && location.pathname === "/blog"
         ? posts.map((post) => {
             return (
               <div key={post.name}>
-                <Link to={`post/${post.name}`}>{post.name}</Link>
+                <Link to={`post/${post.name}`} className={styles.link}>
+                  {post.name}
+                </Link>
               </div>
             );
           })
