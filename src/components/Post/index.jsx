@@ -1,11 +1,12 @@
 import React from "react";
+import ReactMarkdown from "react-markdown";
+import ReactDom from "react-dom";
 
 export function Post(props) {
   console.log("Post props: ", props);
   return (
     <div>
-      <h1>{props.props.name}</h1>
-      <p>{props.props.content}</p>
+      <ReactMarkdown children={props.props.content} />
     </div>
   );
 }
