@@ -6,6 +6,9 @@
   align-items: center;
   text-align: center;
   font-size: 0.5em;
+  * {
+    max-width: 80vw;
+  }
 }
 pre {
   background-color: rgba(0, 0, 0, 0.39);
@@ -18,6 +21,7 @@ pre {
 }
 
 p {
+  max-width: 80vw;
   text-align: left;
   width: 80vw;
   font-size: 0.5em;
@@ -43,4 +47,8 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+a {
+  color: #eeeeee;
 }
