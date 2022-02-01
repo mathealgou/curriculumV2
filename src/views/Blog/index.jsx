@@ -28,7 +28,7 @@ export function Blog() {
             return (
               <div key={post.name}>
                 <Link to={`post/${post.name}`} className={styles.link}>
-                  {post.name}
+                  {post.name.replace(/-/g, " ")}
                 </Link>
               </div>
             );
