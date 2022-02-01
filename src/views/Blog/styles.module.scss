@@ -35,3 +35,12 @@ p {
     text-decoration: underline;
   }
 }
+
+img {
+  align-self: center;
+  max-width: 80vw;
+  max-height: 80vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
