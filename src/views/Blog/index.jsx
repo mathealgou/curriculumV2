@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, useLocation } from "react-router-dom";
 import { Post } from "../../components/Post";
 
 export function Blog() {
   const [posts, setPosts] = useState([]);
-  const [path, setPath] = useState(null);
+  const location = useLocation();
+
+  console.log("location: ", location);
 
   const postsUrl = "http://localhost:8000/";
 
@@ -20,8 +22,7 @@ export function Blog() {
 
   return (
     <div>
-      <h1>Blog</h1>
-      {posts
+      {posts && location.pathname === "/blog"
         ? posts.map((post) => {
             return (
               <div key={post.name}>
